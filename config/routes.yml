@@ -1,0 +1,8 @@
+weather:
+    wr/(<action:.+?>):
+        controller: ws
+        action: index
+weatherupdate:
+    core/ajax_weather_update:
+        controller: ws
+        action: ajax

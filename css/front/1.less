@@ -1,0 +1,84 @@
+table.allweather
+{
+    border-collapse: collapse;
+    border-style: inset;
+    
+    td,
+    th
+    {
+        padding: 3px 6px;
+        border: 1px solid #bbb;
+    }
+}
+
+table.allweather tr:nth-child(2n+1)
+{
+    background: #ddd;
+}
+
+a.active
+{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.wrapped-dygraph
+{
+    h2
+    {
+        text-align: center;
+        width: ~"calc(100% - 376px)";
+    }
+    
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    height: 450px;
+}
+@media (max-width: 1200px) 
+{
+   .wrapped-dygraph
+    {
+        width: auto;
+        padding: 0;
+        float: none;
+    }
+}
+
+.dygraph
+{
+    width: 80%;
+    width: ~"calc(100% - 240px) !important";
+}
+
+.dygraph-legend
+{
+    background: transparent !important;
+    text-shadow: 0 0 2px rgba(255,255,255,.3);
+    
+    left: initial !important;
+    position: relative !important;
+    right: -100% !important;
+    > span
+    {
+        display: block;
+        font-size: 11px !important;
+        &.highlight
+        {
+            text-decoration: underline;
+        }
+        &.empty
+        {
+            display: none;
+        }
+        &.empty.highlight
+        {
+            display: block;
+        }
+    }
+}
